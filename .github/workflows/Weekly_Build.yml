@@ -23,7 +23,7 @@ jobs:
       - name: Delete Weekly Build
         uses: Mattraks/delete-workflow-runs@v2
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           retain_days: 0 # 全部删除只留正在跑的一条
           keep_minimum_runs: 0 # 全部删除只留正在跑的一条
